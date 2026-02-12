@@ -1,58 +1,83 @@
-# AI Manufacturing & Retail Copilot
-A clear prototype to empower small manufacturers with AI-driven decision support across production and retail operations.
-
-## Problem Statement
-Small and mid-sized manufacturing businesses struggle to manage production planning, inventory, sales, and returns using fragmented tools and manual decision-making. This often leads to overproduction, stockouts, delayed deliveries, and poor visibility into why issues occur.
+# Requirements – AI Business Companion
 
 ## Objective
-Build an AI-powered copilot that helps manufacturing businesses make smarter, faster decisions by combining manufacturing data and retail data into a single, intelligent system.
 
-The copilot should:
-- Monitor production, inventory, and sales in one place
-- Explain *what is happening* and *why*
-- Recommend actions in simple, human language
+Build an AI-powered business companion that proactively guides manufacturing and retail SMEs in daily decision-making across production, sales, inventory, and returns.
 
-## Target Users
-- Small and mid-sized manufacturers
-- Factory owners and operations managers
-- Sales and supply chain teams
-- Businesses that both **produce and sell** products
+---
 
-## Key Use Cases
-- Detect unusual spikes in demand (e.g., festivals, seasonal trends)
-- Recommend increasing or reducing production
-- Explain reasons behind high returns or low sales
-- Track inventory health across warehouses
-- Answer natural language questions like:
-  - “Why are returns high this week?”
-  - “Should we produce more next month?”
-  - “Which product is underperforming and why?”
+## Core Capabilities
 
-## Why AI Is Needed
-Traditional dashboards show numbers but do not explain meaning or suggest actions. This is not a rules-based system. AI enables pattern detection and human-like explanation that simple rules or dashboards cannot provide.
+### 1. Daily Business Briefing
 
-AI enables:
-- Pattern detection across large datasets
-- Natural language explanations
-- Forecasting future demand
-- Intelligent recommendations instead of static reports
+The system must provide a daily summary when the user asks:
+- “What’s up today?”
+- “Anything I should know?”
 
-## Expected Outcomes
-- Better production planning
-- Reduced waste and stockouts
-- Faster decision-making
-- Improved understanding of business performance
+The briefing should include:
+- Key risks (e.g. low stock, rising returns)
+- Upcoming opportunities (e.g. festivals, demand spikes)
+- Suggested priorities for the day
 
-## Constraints & Assumptions
-- Uses synthetic or sample data for the prototype
-- Designed for scalability to real-world systems
-- Focuses on clarity and usability over complexity
+---
 
-## Success Criteria
-- Clear demonstration of AI-driven insights
-- Easy-to-understand explanations
-- Practical business value for manufacturers
-- Feels usable by non-technical users
+### 2. Proactive Insights
 
-## Data Sources
-Prototype will use synthetic sales, inventory, and returns data to demonstrate insight quality.
+The system must:
+- Continuously analyze historical and recent data
+- Detect meaningful patterns or anomalies
+- Surface insights **without requiring explicit queries**
+
+Examples:
+- Unusual return patterns
+- Production not matching demand
+- Seasonal demand approaching
+
+---
+
+### 3. Conversational Explanation
+
+The system must explain insights in:
+- Simple, non-technical language
+- Short, clear sentences
+- Cause → effect → recommendation format
+
+Example:
+- “Returns increased because packaging was weak. Reinforcing boxes can reduce damage.”
+
+---
+
+### 4. Action Suggestions
+
+When relevant, the system should recommend actions such as:
+- Increase or reduce production
+- Adjust packaging or logistics
+- Prepare inventory ahead of festivals
+- Investigate specific products or suppliers
+
+Suggestions are advisory, not automatic actions.
+
+---
+
+### 5. Learning Over Time
+
+The system must improve recommendations by:
+- Learning from past outcomes
+- Observing seasonal trends
+- Adapting to the specific business context
+
+---
+
+## Data Constraints
+
+- Uses synthetic or publicly available datasets
+- No sensitive or personal customer data
+- Clearly states assumptions and limitations
+
+---
+
+## Non-Goals
+
+- No complex dashboards
+- No rule-based “if-this-then-that” logic
+- No automatic execution of business actions
