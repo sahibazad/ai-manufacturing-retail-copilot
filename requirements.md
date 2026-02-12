@@ -1,4 +1,5 @@
 # AI Manufacturing & Retail Copilot
+A clear prototype to empower small manufacturers with AI-driven decision support across production and retail operations.
 
 ## Problem Statement
 Small and mid-sized manufacturing businesses struggle to manage production planning, inventory, sales, and returns using fragmented tools and manual decision-making. This often leads to overproduction, stockouts, delayed deliveries, and poor visibility into why issues occur.
@@ -28,7 +29,7 @@ The copilot should:
   - “Which product is underperforming and why?”
 
 ## Why AI Is Needed
-Traditional dashboards show numbers but do not explain meaning or suggest actions.
+Traditional dashboards show numbers but do not explain meaning or suggest actions. This is not a rules-based system. AI enables pattern detection and human-like explanation that simple rules or dashboards cannot provide.
 
 AI enables:
 - Pattern detection across large datasets
@@ -52,3 +53,6 @@ AI enables:
 - Easy-to-understand explanations
 - Practical business value for manufacturers
 - Feels usable by non-technical users
+
+## Data Sources
+Prototype will use synthetic sales, inventory, and returns data to demonstrate insight quality.
