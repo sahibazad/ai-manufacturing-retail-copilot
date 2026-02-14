@@ -1,92 +1,90 @@
-# Design – AI Business Companion
-
-## System Philosophy
-
-The system is designed as a **companion**, not a tool.
-
-Instead of reacting to queries, it:
-- Observes continuously
-- Thinks contextually
-- Speaks only when useful
-
-The goal is to reduce cognitive load for business owners.
-
----
+# System Design – AI Business Companion
 
 ## High-Level Architecture
 
-### Data Layer
-- Sales data
-- Production data
-- Inventory levels
-- Returns and complaints
-- Calendar data (festivals, seasons)
+The system is designed as a lightweight AI companion that sits on top of
+manufacturing and retail data sources and provides daily decision guidance.
 
-(All data is synthetic or publicly available for the prototype.)
-
----
-
-### Intelligence Layer
-
-The AI system:
-- Analyzes trends over time
-- Detects anomalies and shifts
-- Connects cause and effect across domains
-  (e.g. production → packaging → returns)
-
-This layer uses:
-- Large Language Models for reasoning and explanation
-- Statistical signals for trend detection
-- Context memory for business-specific patterns
+Core components:
+- Data Ingestion Layer
+- AI Reasoning Layer
+- Conversational Interface
+- Insight & Recommendation Engine
 
 ---
 
-### Interaction Layer
+## Daily Business Companion Interaction
 
-Users interact through a conversational interface.
+The AI behaves like a daily business partner rather than a traditional analytics tool.
 
-Primary interaction:
-- “What’s up today?”
+Each day, the user can ask:
+- “What should I focus on today?”
+- “Is production aligned with upcoming demand?”
+- “Why are returns increasing?”
+- “Do I need to prepare for a festival spike?”
 
-Secondary interactions:
-- “Why is this happening?”
-- “What should I do?”
-- “What happens if I don’t act?”
-
-Responses are:
-- Short
-- Clear
-- Action-oriented
-
----
-
-## Decision Framing
-
-Each response follows a simple structure:
-
-1. What is happening
-2. Why it matters
-3. What can be done next
-
-This ensures clarity without overwhelming the user.
+The system proactively:
+- reviews sales, inventory, and returns
+- considers recent trends and upcoming events
+- highlights risks or opportunities
+- suggests clear next actions
 
 ---
 
-## Example Flow
+## Day-in-the-Life Example
 
-1. AI detects rising returns for a product
-2. AI connects it to recent packaging changes
-3. User asks: “What’s up today?”
-4. AI responds with:
-   - Insight
-   - Explanation
-   - Suggested action
+Every morning, the business owner opens the app.
+
+The AI Companion says:
+
+“Today looks stable, but demand for Product A is rising due to an upcoming festival.
+Returns for Product B increased yesterday, likely due to packaging issues.
+You should increase production of Product A by 10% and review quality checks for Product B.”
+
+This reduces guesswork and helps the owner act with confidence.
 
 ---
 
-## Future Extensions
+## AI Reasoning Flow
 
-- Multi-location support
-- Supplier-side insights
-- Voice-based daily briefings
-- WhatsApp or mobile-first delivery
+1. Ingest recent business data
+2. Detect changes or anomalies
+3. Correlate with historical patterns and calendar events
+4. Generate explanations in simple language
+5. Suggest practical actions
+
+---
+
+## Technology Stack (Conceptual)
+
+- Foundation Models via Amazon Bedrock
+- Prompt orchestration for business reasoning
+- Structured outputs for explainability
+- Scalable cloud-native architecture
+
+---
+
+## Responsible Design
+
+- Uses synthetic or public data only
+- Provides explanations for every recommendation
+- Designed to assist, not automate final decisions
+- Keeps humans in the decision loop
+
+---
+
+## Scalability & Future Scope
+
+- Can support multiple businesses
+- Can extend to supplier planning and pricing intelligence
+- Can integrate with marketplace APIs in future phases
+
+---
+
+## Summary
+
+This AI Business Companion simplifies complex manufacturing and retail decisions
+into clear, daily guidance.
+
+It is designed for real-world practicality, not technical complexity —
+helping small businesses grow with confidence.
