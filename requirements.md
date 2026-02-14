@@ -1,83 +1,102 @@
-# Requirements – AI Business Companion
+# AI Manufacturing & Retail Business Companion
 
-## Objective
+## Problem Overview
 
-Build an AI-powered business companion that proactively guides manufacturing and retail SMEs in daily decision-making across production, sales, inventory, and returns.
+Small manufacturing and retail businesses struggle to make daily decisions because
+their data is scattered across sales, production, inventory, and returns.
 
----
+Most existing tools provide dashboards and reports.
+Very few explain what to do today — and why.
 
-## Core Capabilities
-
-### 1. Daily Business Briefing
-
-The system must provide a daily summary when the user asks:
-- “What’s up today?”
-- “Anything I should know?”
-
-The briefing should include:
-- Key risks (e.g. low stock, rising returns)
-- Upcoming opportunities (e.g. festivals, demand spikes)
-- Suggested priorities for the day
+This project builds an AI-powered Business Companion that helps small manufacturers
+and sellers make better day-to-day decisions across production planning, demand
+forecasting, and returns analysis.
 
 ---
 
-### 2. Proactive Insights
+## Target Users
 
-The system must:
-- Continuously analyze historical and recent data
-- Detect meaningful patterns or anomalies
-- Surface insights **without requiring explicit queries**
-
-Examples:
-- Unusual return patterns
-- Production not matching demand
-- Seasonal demand approaching
+- Small and medium manufacturing businesses
+- Owner-led factories that also sell directly or via marketplaces
+- Operations managers handling both production and sales
 
 ---
 
-### 3. Conversational Explanation
+## Core Goals
 
-The system must explain insights in:
-- Simple, non-technical language
-- Short, clear sentences
-- Cause → effect → recommendation format
-
-Example:
-- “Returns increased because packaging was weak. Reinforcing boxes can reduce damage.”
+- Reduce guesswork in daily business decisions
+- Help businesses prepare for demand spikes (festivals, promotions)
+- Identify return issues early and explain root causes
+- Provide clear, actionable guidance instead of raw metrics
 
 ---
 
-### 4. Action Suggestions
+## Key Capabilities
 
-When relevant, the system should recommend actions such as:
-- Increase or reduce production
-- Adjust packaging or logistics
-- Prepare inventory ahead of festivals
-- Investigate specific products or suppliers
+### 1. Daily Business Summary
+- Highlights today’s priorities
+- Flags risks and opportunities
+- Explains what changed since yesterday
 
-Suggestions are advisory, not automatic actions.
+### 2. Demand & Production Forecasting
+- Predicts short-term demand using historical sales trends
+- Suggests production increases or decreases
+- Accounts for seasonal and festival-driven spikes
+
+### 3. Returns Intelligence
+- Detects increases in returns
+- Explains possible reasons (quality, packaging, logistics, expectations)
+- Recommends corrective actions
+
+### 4. Conversational Interaction
+Users can ask natural questions such as:
+- “What should I focus on today?”
+- “Should I increase production next week?”
+- “Why did returns increase yesterday?”
+- “Which products are underperforming?”
+
+The AI responds with:
+- a simple explanation
+- supporting insights
+- a suggested next action
 
 ---
 
-### 5. Learning Over Time
+## Why AI Is Required
 
-The system must improve recommendations by:
-- Learning from past outcomes
-- Observing seasonal trends
-- Adapting to the specific business context
+This is not a rules-based system.
+
+Business decisions depend on changing and uncertain factors such as:
+- seasonal demand
+- festival calendars
+- sudden sales spikes or drops
+- supply chain delays
+- quality issues reflected through returns
+
+A static rule engine cannot adapt to these conditions.
+The AI reasons over trends, patterns, and context to provide guidance,
+not fixed outcomes.
 
 ---
 
-## Data Constraints
+## Data Approach
 
-- Uses synthetic or publicly available datasets
-- No sensitive or personal customer data
-- Clearly states assumptions and limitations
+- Uses synthetic or simulated business data
+- Can later integrate real sales, inventory, and returns data
+- Designed to work with incomplete or noisy datasets common in small businesses
 
 ---
 
 ## Non-Goals
 
-- No complex dashboards
-- No rule-based “if-this-then-that” logic
-- No automatic execution of business actions
+- Not an ERP replacement
+- Not a static reporting dashboard
+- Not a manual rules engine
+
+---
+
+## Success Criteria
+
+- Users understand what action to take without reading charts
+- Decisions feel simpler and more confident
+- Businesses can react earlier to demand and return issues
